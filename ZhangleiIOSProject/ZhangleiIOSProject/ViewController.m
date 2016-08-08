@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LangCaptain.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self getConfigTest];
+}
+
+- (void)getConfigTest {
+    NSString *lang = [[LangCaptain getInstance] getLangByCode:@"LangA"];
+    NSString *err = [[LangCaptain getInstance] getErrMessageByCode:@"ERR_Name"];
+    NSLog(@"lang is %@", lang);
+    NSLog(@"err is %@", err);
 }
 
 - (void)didReceiveMemoryWarning {

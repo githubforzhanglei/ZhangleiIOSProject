@@ -15,22 +15,37 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - GDataXML-HTML (1.1.0)
+  - JazzHands (2.0.0)
+  - Masonry (1.0.1)
+  - ODRefreshControl (1.2)
   - OpenSSL (1.0.208)
+  - RDVTabBarController (1.1.9)
   - Reachability (3.0.0)
   - SBJson (4.0.2)
+  - SMPageControl (1.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
   - GDataXML-HTML (~> 1.1.0)
+  - JazzHands (= 2.0.0)
+  - Masonry
+  - ODRefreshControl
   - OpenSSL (~> 1.0)
+  - RDVTabBarController
   - Reachability (~> 3.0.0)
   - SBJson (~> 4.0.0)
+  - SMPageControl
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   GDataXML-HTML: 944b1bf8ecb8ce0c5431731ab8298d0cd411b8c8
+  JazzHands: 00002e9b1284e7fc1ac6555012e81b8942477242
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  ODRefreshControl: 907e6149d72dde488d5917ccfabee5bd8d711a20
   OpenSSL: b187269d386b07452f56af273764ea0636dd5da8
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   Reachability: 31e4272bd8378e094beaf6609dc182c85c4e6574
   SBJson: c18691cc18375b14664ff0fec841f8c4faef1934
+  SMPageControl: 922892813001cfaf059e86e6801f46a967e9ee29
 
 COCOAPODS: 0.37.1

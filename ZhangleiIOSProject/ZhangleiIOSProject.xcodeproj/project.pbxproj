@@ -18,6 +18,9 @@
 		921B4EAC1D58848F001C6466 /* ZhangleiIOSProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4EAB1D58848F001C6466 /* ZhangleiIOSProjectUITests.m */; };
 		921B4EBB1D5894FA001C6466 /* config in Resources */ = {isa = PBXBuildFile; fileRef = 921B4EBA1D5894FA001C6466 /* config */; };
 		921B4ED51D58960F001C6466 /* LangCaptain.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4ED41D58960F001C6466 /* LangCaptain.m */; };
+		92F591AD1D59BD16004E242B /* LocationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F591AC1D59BD16004E242B /* LocationData.m */; };
+		92F591B11D59C255004E242B /* NSData+AES256Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F591B01D59C255004E242B /* NSData+AES256Encrypt.m */; };
+		92F591B51D59D37E004E242B /* DebugUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F591B41D59D37E004E242B /* DebugUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		921B4EBA1D5894FA001C6466 /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = config; sourceTree = "<group>"; };
 		921B4ED31D58960F001C6466 /* LangCaptain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangCaptain.h; sourceTree = "<group>"; };
 		921B4ED41D58960F001C6466 /* LangCaptain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LangCaptain.m; sourceTree = "<group>"; };
+		92F591AB1D59BD16004E242B /* LocationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationData.h; sourceTree = "<group>"; };
+		92F591AC1D59BD16004E242B /* LocationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationData.m; sourceTree = "<group>"; };
+		92F591AF1D59C255004E242B /* NSData+AES256Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256Encrypt.h"; sourceTree = "<group>"; };
+		92F591B01D59C255004E242B /* NSData+AES256Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256Encrypt.m"; sourceTree = "<group>"; };
+		92F591B31D59D37E004E242B /* DebugUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugUtil.h; sourceTree = "<group>"; };
+		92F591B41D59D37E004E242B /* DebugUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugUtil.m; sourceTree = "<group>"; };
 		CF62244312795A3B985144A0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +123,9 @@
 		921B4E851D58848F001C6466 /* ZhangleiIOSProject */ = {
 			isa = PBXGroup;
 			children = (
+				92F591B21D59D354004E242B /* Debug */,
+				92F591AE1D59C22A004E242B /* Encrypt */,
+				92F591AA1D59BD07004E242B /* LocationData */,
 				921B4ED21D589602001C6466 /* Config */,
 				921B4E891D58848F001C6466 /* AppDelegate.h */,
 				921B4E8A1D58848F001C6466 /* AppDelegate.m */,
@@ -161,6 +173,33 @@
 				921B4ED41D58960F001C6466 /* LangCaptain.m */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		92F591AA1D59BD07004E242B /* LocationData */ = {
+			isa = PBXGroup;
+			children = (
+				92F591AB1D59BD16004E242B /* LocationData.h */,
+				92F591AC1D59BD16004E242B /* LocationData.m */,
+			);
+			path = LocationData;
+			sourceTree = "<group>";
+		};
+		92F591AE1D59C22A004E242B /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				92F591AF1D59C255004E242B /* NSData+AES256Encrypt.h */,
+				92F591B01D59C255004E242B /* NSData+AES256Encrypt.m */,
+			);
+			path = Encrypt;
+			sourceTree = "<group>";
+		};
+		92F591B21D59D354004E242B /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				92F591B31D59D37E004E242B /* DebugUtil.h */,
+				92F591B41D59D37E004E242B /* DebugUtil.m */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 		93A59E7150871B5599A5786E /* Pods */ = {
@@ -346,8 +385,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F591B11D59C255004E242B /* NSData+AES256Encrypt.m in Sources */,
 				921B4E8E1D58848F001C6466 /* ViewController.m in Sources */,
+				92F591B51D59D37E004E242B /* DebugUtil.m in Sources */,
 				921B4E8B1D58848F001C6466 /* AppDelegate.m in Sources */,
+				92F591AD1D59BD16004E242B /* LocationData.m in Sources */,
 				921B4ED51D58960F001C6466 /* LangCaptain.m in Sources */,
 				921B4E881D58848F001C6466 /* main.m in Sources */,
 			);

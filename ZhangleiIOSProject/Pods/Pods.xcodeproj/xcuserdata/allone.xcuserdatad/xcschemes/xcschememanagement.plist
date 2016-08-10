@@ -14,12 +14,37 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-JazzHands.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-ODRefreshControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-RDVTabBarController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Reachability.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-SBJson.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SMPageControl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>634E01D1645DA605537003B5</key>
+		<key>0E94666E5577212DDC88CC18</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8945CF5B0634A3B277B66962</key>
+		<key>12183EF0ADB402446AD4273D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E47E60DE9560705CC23FD84</key>
+		<key>19C0DFDF14C14815BE6F7A06</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA8812ABF248E563F2D316A6</key>
+		<key>41567015F5501FCE622BCEF6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D9A0C86EF3D06077A43CCC8A</key>
+		<key>4248EB6455AB8A29EDEC168D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>50671B8E9797B357188988B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D51C53479F05A4B208DDD94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74F7122F95223F54382BCA3E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A215119690ECDDDA7C43A9C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB44504BA2F7B9D7073F8766</key>
 		<dict>
 			<key>primary</key>
 			<true/>

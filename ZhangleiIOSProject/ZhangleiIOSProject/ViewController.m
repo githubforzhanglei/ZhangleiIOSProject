@@ -10,17 +10,20 @@
 #import "LangCaptain.h"
 #import "LocationData.h"
 #import "DebugUtil.h"
-#import <IFTTTJazzHands.h>
 #import "SMPageControl.h"
 #import "Masonry.h"
+#import "IFTTTJazzHands.h"
+#import <WebKit/WebKit.h>
 
-@interface ViewController()<UIScrollViewDelegate> {
+@interface ViewController()<UIScrollViewDelegate, UIWebViewDelegate> {
     UIView *redView;
     UIView *blueView;
     UIView *yellow;
     UIView *green;
     
     Boolean isMasonaryTest;
+    
+    UIWebView *webView;
 }
 @property UIScrollView *scrollView;
 @property UIView *jazzblueView;
@@ -41,18 +44,53 @@
     //    [self jazzHandTest];
     //    [self smPageControlTest];
     
-//    [self masonaryTest];
-    [self uilabelTest];
+    //    [self masonaryTest];
+    //    [self uilabelTest];
+    webView = [[UIWebView alloc] init];
+    [webView setFrame:self.view.frame];
+    [webView setDelegate:self];
+    [webView setBackgroundColor:[UIColor blackColor]];
+    [self.view addSubview:webView];
+    NSURL *url = [[NSURL alloc] initWithString:@"http://online.cangjinbao.com/EX02-MTP-CSTSv3/index.html"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [webView loadRequest:request];
+//
+//    WKWebView *webView = [[WKWebView alloc] init];
+//    [self.view addSubview:webView];
+//    [webView setFrame:self.view.frame];
+//    [webView setUIDelegate:self];
+//    [webView setNavigationDelegate:self];
+//    [webView loadRequest:request];
+}
+
+#pragma webViewDelegate
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    return true;
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
     
 }
 
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    NSLog(@"%@", error);
+}
+
+/**
+ *  <#Description#>
+ *  @param touches <#touches description#>
+ *  @param event   <#event description#>
+ */
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     //先把蓝色方块从父视图上移除
     
     if (isMasonaryTest) {
         
         [redView mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(self.view.mas_left).offset(0);//使左边等于self.view的左边，间距为0
             make.top.equalTo(self.view.mas_top).offset(0);//使顶部与self.view的间距为0
             make.width.equalTo(self.view.mas_width).multipliedBy(0.2);//设置宽度为self.view的一半，multipliedBy是倍数的意思，也就是，使宽度等于self.view宽度的0.5倍
             make.height.equalTo(self.view.mas_height).multipliedBy(0.2);//设置高度为self.view高度的一半
@@ -191,10 +229,10 @@
     NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:@"36.25678"];
     [str addAttribute:NSForegroundColorAttributeName value:[UIColor blueColor] range:NSMakeRange(0,2)];
     [str addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(3,5)];
-//    [str addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:NSMakeRange(19,6)];
+    //    [str addAttribute:NSForegroundColorAttributeName value:[UIColor greenColor] range:NSMakeRange(19,6)];
     [str addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Arial-BoldItalicMT" size:20.0] range:NSMakeRange(0, 2)];
     [str addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue-Bold" size:30.0] range:NSMakeRange(3, 5)];
-//    [str addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Courier-BoldOblique" size:30.0] range:NSMakeRange(19, 6)];
+    //    [str addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Courier-BoldOblique" size:30.0] range:NSMakeRange(19, 6)];
     UILabel *attrLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 350, 30)];
     [self.view addSubview:attrLabel];
     attrLabel.attributedText = str;

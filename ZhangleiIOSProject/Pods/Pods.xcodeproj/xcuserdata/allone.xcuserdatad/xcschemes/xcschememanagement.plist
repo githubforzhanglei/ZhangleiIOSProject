@@ -4,52 +4,37 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
+		<key>AFNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-GDataXML-HTML.xcscheme</key>
+		<key>GDataXML-HTML.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-JazzHands.xcscheme</key>
+		<key>JazzHands.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Masonry.xcscheme</key>
+		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ODRefreshControl.xcscheme</key>
+		<key>Pods-ZhangleiIOSProject.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-RDVTabBarController.xcscheme</key>
+		<key>SMPageControl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Reachability.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SBJson.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-SMPageControl.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods.xcscheme</key>
+		<key>WebViewJavascriptBridge.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,52 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0E94666E5577212DDC88CC18</key>
+		<key>4262BBA69037616CAFAC960466AF77B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>12183EF0ADB402446AD4273D</key>
+		<key>61AF834BD5E672B7F7D09720B79C2A88</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19C0DFDF14C14815BE6F7A06</key>
+		<key>881778F734C59ECF7503E664AA00F273</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>41567015F5501FCE622BCEF6</key>
+		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4248EB6455AB8A29EDEC168D</key>
+		<key>9E2118538F3F64CC53B3BBFBF17E682F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>50671B8E9797B357188988B1</key>
+		<key>AFAFB55453D161D2BB5CFB30C68A54D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6D51C53479F05A4B208DDD94</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>74F7122F95223F54382BCA3E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A215119690ECDDDA7C43A9C6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EB44504BA2F7B9D7073F8766</key>
+		<key>CEA433434E73E2E09F093C65198A9D3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

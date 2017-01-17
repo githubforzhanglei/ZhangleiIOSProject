@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0785F410BBF545F795F68E87 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF62244312795A3B985144A0 /* libPods.a */; };
+		4F3307748381AE2ADBAB9EAF /* libPods-ZhangleiIOSProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9305E85F9D7D8889A335D27 /* libPods-ZhangleiIOSProject.a */; };
 		921B4E881D58848F001C6466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4E871D58848F001C6466 /* main.m */; };
 		921B4E8B1D58848F001C6466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4E8A1D58848F001C6466 /* AppDelegate.m */; };
 		921B4E8E1D58848F001C6466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4E8D1D58848F001C6466 /* ViewController.m */; };
@@ -41,8 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		34DF3CCB9D20F3C012CAFE4D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		71A6C0712C4CE36B8822D8BC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		636A9EFFB6E240C1D8970C0E /* Pods-ZhangleiIOSProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhangleiIOSProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhangleiIOSProject/Pods-ZhangleiIOSProject.release.xcconfig"; sourceTree = "<group>"; };
 		921B4E831D58848F001C6466 /* ZhangleiIOSProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhangleiIOSProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		921B4E871D58848F001C6466 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		921B4E891D58848F001C6466 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,7 +67,8 @@
 		92F591B01D59C255004E242B /* NSData+AES256Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256Encrypt.m"; sourceTree = "<group>"; };
 		92F591B31D59D37E004E242B /* DebugUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugUtil.h; sourceTree = "<group>"; };
 		92F591B41D59D37E004E242B /* DebugUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugUtil.m; sourceTree = "<group>"; };
-		CF62244312795A3B985144A0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB210A03B812C8E8519AD57 /* Pods-ZhangleiIOSProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhangleiIOSProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhangleiIOSProject/Pods-ZhangleiIOSProject.debug.xcconfig"; sourceTree = "<group>"; };
+		F9305E85F9D7D8889A335D27 /* libPods-ZhangleiIOSProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhangleiIOSProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0785F410BBF545F795F68E87 /* libPods.a in Frameworks */,
+				4F3307748381AE2ADBAB9EAF /* libPods-ZhangleiIOSProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +97,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FB9703BA09FA749FA9D9FB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFB210A03B812C8E8519AD57 /* Pods-ZhangleiIOSProject.debug.xcconfig */,
+				636A9EFFB6E240C1D8970C0E /* Pods-ZhangleiIOSProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		921B4E7A1D58848E001C6466 = {
 			isa = PBXGroup;
 			children = (
@@ -105,8 +114,8 @@
 				921B4E9F1D58848F001C6466 /* ZhangleiIOSProjectTests */,
 				921B4EAA1D58848F001C6466 /* ZhangleiIOSProjectUITests */,
 				921B4E841D58848F001C6466 /* Products */,
-				93A59E7150871B5599A5786E /* Pods */,
-				F1B74F0940AAB9A28C0CDA44 /* Frameworks */,
+				2FB9703BA09FA749FA9D9FB7 /* Pods */,
+				C568B332DFB16BA4291F6F3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,19 +211,10 @@
 			path = Debug;
 			sourceTree = "<group>";
 		};
-		93A59E7150871B5599A5786E /* Pods */ = {
+		C568B332DFB16BA4291F6F3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				71A6C0712C4CE36B8822D8BC /* Pods.debug.xcconfig */,
-				34DF3CCB9D20F3C012CAFE4D /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F1B74F0940AAB9A28C0CDA44 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CF62244312795A3B985144A0 /* libPods.a */,
+				F9305E85F9D7D8889A335D27 /* libPods-ZhangleiIOSProject.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,11 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 921B4EB01D58848F001C6466 /* Build configuration list for PBXNativeTarget "ZhangleiIOSProject" */;
 			buildPhases = (
-				FC31767CA1DF48E47839B1F2 /* Check Pods Manifest.lock */,
+				9D66709EEDBE6DB3B61A7DA5 /* [CP] Check Pods Manifest.lock */,
 				921B4E7F1D58848F001C6466 /* Sources */,
 				921B4E801D58848F001C6466 /* Frameworks */,
 				921B4E811D58848F001C6466 /* Resources */,
-				160C488A4FBD3D734816133B /* Copy Pods Resources */,
+				6AEECAFBC58A38FA571E26B5 /* [CP] Embed Pods Frameworks */,
+				007292C5ECC38C69884E53F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,18 +284,21 @@
 		921B4E7B1D58848E001C6466 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = zhanglei;
 				TargetAttributes = {
 					921B4E821D58848F001C6466 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PSSLG7YSAQ;
 					};
 					921B4E9B1D58848F001C6466 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PSSLG7YSAQ;
 						TestTargetID = 921B4E821D58848F001C6466;
 					};
 					921B4EA61D58848F001C6466 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PSSLG7YSAQ;
 						TestTargetID = 921B4E821D58848F001C6466;
 					};
 				};
@@ -348,34 +352,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		160C488A4FBD3D734816133B /* Copy Pods Resources */ = {
+		007292C5ECC38C69884E53F4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhangleiIOSProject/Pods-ZhangleiIOSProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FC31767CA1DF48E47839B1F2 /* Check Pods Manifest.lock */ = {
+		6AEECAFBC58A38FA571E26B5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZhangleiIOSProject/Pods-ZhangleiIOSProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D66709EEDBE6DB3B61A7DA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -460,8 +479,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -483,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -504,8 +525,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -521,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -530,9 +553,10 @@
 		};
 		921B4EB11D58848F001C6466 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71A6C0712C4CE36B8822D8BC /* Pods.debug.xcconfig */;
+			baseConfigurationReference = EFB210A03B812C8E8519AD57 /* Pods-ZhangleiIOSProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PSSLG7YSAQ;
 				INFOPLIST_FILE = ZhangleiIOSProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PushTest.ZhangleiIOSProject;
@@ -542,9 +566,10 @@
 		};
 		921B4EB21D58848F001C6466 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34DF3CCB9D20F3C012CAFE4D /* Pods.release.xcconfig */;
+			baseConfigurationReference = 636A9EFFB6E240C1D8970C0E /* Pods-ZhangleiIOSProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PSSLG7YSAQ;
 				INFOPLIST_FILE = ZhangleiIOSProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PushTest.ZhangleiIOSProject;
@@ -556,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PSSLG7YSAQ;
 				INFOPLIST_FILE = ZhangleiIOSProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PushTest.ZhangleiIOSProjectTests;
@@ -568,6 +594,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = PSSLG7YSAQ;
 				INFOPLIST_FILE = ZhangleiIOSProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PushTest.ZhangleiIOSProjectTests;
@@ -579,6 +606,7 @@
 		921B4EB71D58848F001C6466 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = PSSLG7YSAQ;
 				INFOPLIST_FILE = ZhangleiIOSProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PushTest.ZhangleiIOSProjectUITests;
@@ -590,6 +618,7 @@
 		921B4EB81D58848F001C6466 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = PSSLG7YSAQ;
 				INFOPLIST_FILE = ZhangleiIOSProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PushTest.ZhangleiIOSProjectUITests;

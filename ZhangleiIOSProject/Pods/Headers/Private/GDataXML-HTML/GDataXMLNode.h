@@ -1,1 +1,1 @@
-../../../GDataXML-HTML/GDataXML-HTML/lib/GDataXMLNode.h
+../../../GDataXML-HTML/Pod/Classes/GDataXMLNode.h

@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ [数据加密] 写入数据 加密
+ **/
+
 @interface NSData (AES256Encrypt)
 
 - (NSData *)AES256EncryptWithKey:(NSString *)key;   //加密

@@ -14,8 +14,9 @@
 #import "Masonry.h"
 #import "IFTTTJazzHands.h"
 #import <WebKit/WebKit.h>
+#import "IOSLogic.h"
 
-@interface ViewController()<UIScrollViewDelegate, UIWebViewDelegate> {
+@interface ViewController()<UIScrollViewDelegate, UIWebViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource> {
     UIView *redView;
     UIView *blueView;
     UIView *yellow;
@@ -24,6 +25,9 @@
     Boolean isMasonaryTest;
     
     UIWebView *webView;
+    
+    UICollectionView *_collectionView;
+    NSMutableArray *_section0Array;
 }
 @property UIScrollView *scrollView;
 @property UIView *jazzblueView;
@@ -35,9 +39,16 @@
 
 @implementation ViewController
 
+static NSString *const cellId = @"cellId";
+static NSString *const headerId = @"headerId";
+static NSString *const footerId = @"footerId";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    [self.view setBackgroundColor:[UIColor redColor]];
+
+    [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(jumpJSPatch)]];
+
     //    [self getConfigTest];
     //    [self debugTest];
     //
@@ -46,14 +57,16 @@
     
     //    [self masonaryTest];
     //    [self uilabelTest];
-    webView = [[UIWebView alloc] init];
-    [webView setFrame:self.view.frame];
-    [webView setDelegate:self];
-    [webView setBackgroundColor:[UIColor blackColor]];
-    [self.view addSubview:webView];
-    NSURL *url = [[NSURL alloc] initWithString:@"http://online.cangjinbao.com/EX02-MTP-CSTSv3/index.html"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [webView loadRequest:request];
+    
+    
+//    webView = [[UIWebView alloc] init];
+//    [webView setFrame:self.view.frame];
+//    [webView setDelegate:self];
+//    [webView setBackgroundColor:[UIColor blackColor]];
+////    [self.view addSubview:webView];
+//    NSURL *url = [[NSURL alloc] initWithString:@"http://online.cangjinbao.com/EX02-MTP-CSTSv3/index.html"];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    [webView loadRequest:request];
 //
 //    WKWebView *webView = [[WKWebView alloc] init];
 //    [self.view addSubview:webView];
@@ -61,7 +74,194 @@
 //    [webView setUIDelegate:self];
 //    [webView setNavigationDelegate:self];
 //    [webView loadRequest:request];
+    _section0Array = [[NSMutableArray alloc] initWithObjects:@"1", @"2", @"3", @"4",@"1", @"2", @"3", @"4", nil];
+
+    [self loadCollectionView];
 }
+
+- (void)jumpJSPatch {
+    [[IOSLogic getInstance] gotoJSPatchViewController];
+}
+
+- (void)loadCollectionView {
+    
+//    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+//    CustomLayout *layout = [[CustomLayout alloc] init];
+//    layout.headerReferenceSize = CGSizeMake(300, 300);
+//    layout.itemSize = CGSizeMake(110, 110);
+    
+//    _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    [_collectionView setDataSource:self];
+    [_collectionView setDelegate:self];
+    [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:cellId];
+    [_collectionView registerClass:[UICollectionReusableView class]
+        forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
+               withReuseIdentifier:headerId];
+    [_collectionView registerClass:[UICollectionReusableView class]
+        forSupplementaryViewOfKind:UICollectionElementKindSectionFooter
+               withReuseIdentifier:footerId];
+    [self.view addSubview:_collectionView];
+}
+
+
+#pragma mark ---- UICollectionViewDataSource
+// 可以多个 collection
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 2;
+}
+
+// 一个collection 有多少列
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return _section0Array.count;
+}
+
+// 渲染一个 cell
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [_collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor whiteColor];
+    
+    return cell;
+}
+
+// 和UITableView类似，UICollectionView也可设置段头段尾
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    
+    if([kind isEqualToString:UICollectionElementKindSectionHeader])
+    {
+        UICollectionReusableView *headerView = [_collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:headerId forIndexPath:indexPath];
+        if(headerView == nil)
+        {
+            headerView = [[UICollectionReusableView alloc] init];
+        }
+        headerView.backgroundColor = [UIColor grayColor];
+        
+        return headerView;
+    }
+    else if([kind isEqualToString:UICollectionElementKindSectionFooter])
+    {
+        UICollectionReusableView *footerView = [_collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:footerId forIndexPath:indexPath];
+        if(footerView == nil)
+        {
+            footerView = [[UICollectionReusableView alloc] init];
+        }
+        footerView.backgroundColor = [UIColor lightGrayColor];
+        
+        return footerView;
+    }
+    
+    return nil;
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView canMoveItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath*)destinationIndexPath
+{
+    
+}
+
+#pragma mark ---- UICollectionViewDelegateFlowLayout
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+//    return (CGSize){cellWidth,cellWidth};
+    return (CGSize){20.0, 20.0};
+}
+
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(5, 5, 5, 5);
+}
+
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 5.f;
+}
+
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 5.f;
+}
+
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
+{
+//    return (CGSize){ScreenWidth,44};
+    return (CGSize){44,44};
+    
+}
+
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section
+{
+//    return (CGSize){ScreenWidth,22};
+    return (CGSize){44,22};
+}
+
+#pragma mark ---- UICollectionViewDelegate
+
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+// 点击高亮
+- (void)collectionView:(UICollectionView *)collectionView didHighlightItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    cell.backgroundColor = [UIColor greenColor];
+}
+
+
+// 选中某item
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+
+// 长按某item，弹出copy和paste的菜单
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+// 使copy和paste有效
+- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(nullable id)sender
+{
+    if ([NSStringFromSelector(action) isEqualToString:@"copy:"] || [NSStringFromSelector(action) isEqualToString:@"paste:"])
+    {
+        return YES;
+    }
+    
+    return NO;
+}
+
+//
+- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(nullable id)sender
+{
+    if([NSStringFromSelector(action) isEqualToString:@"copy:"])
+    {
+        //        NSLog(@"-------------执行拷贝-------------");
+        [_collectionView performBatchUpdates:^{
+            [_section0Array removeObjectAtIndex:indexPath.row];
+            [_collectionView deleteItemsAtIndexPaths:@[indexPath]];
+        } completion:nil];
+    }
+    else if([NSStringFromSelector(action) isEqualToString:@"paste:"])
+    {
+        NSLog(@"-------------执行粘贴-------------");
+    }
+}
+
 
 #pragma webViewDelegate
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {

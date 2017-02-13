@@ -9,7 +9,7 @@
 #import "LangCaptain.h"
 #import "GDataXMLNode.h"
 
-static LangCaptain *instance = nil;
+static LangCaptain *langCaptainInstance = nil;
 
 @interface LangCaptain(){
     NSMutableDictionary *_errMap;
@@ -20,10 +20,11 @@ static LangCaptain *instance = nil;
 @implementation LangCaptain
 
 + (LangCaptain *)getInstance {
-    if (instance == nil) {
-        instance = [[LangCaptain alloc] init];
-    }
-    return instance;
+    static dispatch_once_t predicate;
+    dispatch_once(&predicate, ^{
+        langCaptainInstance = [[self alloc] init];
+    });
+    return langCaptainInstance;
 }
 
 - (id)init {

@@ -11,13 +11,15 @@
 		921B4E881D58848F001C6466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4E871D58848F001C6466 /* main.m */; };
 		921B4E8B1D58848F001C6466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4E8A1D58848F001C6466 /* AppDelegate.m */; };
 		921B4E8E1D58848F001C6466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4E8D1D58848F001C6466 /* ViewController.m */; };
-		921B4E911D58848F001C6466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921B4E8F1D58848F001C6466 /* Main.storyboard */; };
 		921B4E931D58848F001C6466 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 921B4E921D58848F001C6466 /* Assets.xcassets */; };
-		921B4E961D58848F001C6466 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 921B4E941D58848F001C6466 /* LaunchScreen.storyboard */; };
 		921B4EA11D58848F001C6466 /* ZhangleiIOSProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4EA01D58848F001C6466 /* ZhangleiIOSProjectTests.m */; };
 		921B4EAC1D58848F001C6466 /* ZhangleiIOSProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4EAB1D58848F001C6466 /* ZhangleiIOSProjectUITests.m */; };
 		921B4EBB1D5894FA001C6466 /* config in Resources */ = {isa = PBXBuildFile; fileRef = 921B4EBA1D5894FA001C6466 /* config */; };
 		921B4ED51D58960F001C6466 /* LangCaptain.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4ED41D58960F001C6466 /* LangCaptain.m */; };
+		922E70E91E51A40C00473136 /* JSPatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E70E81E51A40C00473136 /* JSPatchViewController.m */; };
+		926500891E4C1A0E007AC8D9 /* IOSLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 926500881E4C1A0E007AC8D9 /* IOSLogic.m */; };
+		9265008E1E4C40C3007AC8D9 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9265008D1E4C40C3007AC8D9 /* MasonryViewController.m */; };
+		926500911E4C534A007AC8D9 /* UpdateBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 926500901E4C534A007AC8D9 /* UpdateBaseView.m */; };
 		92F591AD1D59BD16004E242B /* LocationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F591AC1D59BD16004E242B /* LocationData.m */; };
 		92F591B11D59C255004E242B /* NSData+AES256Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F591B01D59C255004E242B /* NSData+AES256Encrypt.m */; };
 		92F591B51D59D37E004E242B /* DebugUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F591B41D59D37E004E242B /* DebugUtil.m */; };
@@ -48,9 +50,7 @@
 		921B4E8A1D58848F001C6466 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		921B4E8C1D58848F001C6466 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		921B4E8D1D58848F001C6466 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		921B4E901D58848F001C6466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		921B4E921D58848F001C6466 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		921B4E951D58848F001C6466 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		921B4E971D58848F001C6466 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		921B4E9C1D58848F001C6466 /* ZhangleiIOSProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhangleiIOSProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		921B4EA01D58848F001C6466 /* ZhangleiIOSProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhangleiIOSProjectTests.m; sourceTree = "<group>"; };
@@ -61,6 +61,14 @@
 		921B4EBA1D5894FA001C6466 /* config */ = {isa = PBXFileReference; lastKnownFileType = folder; path = config; sourceTree = "<group>"; };
 		921B4ED31D58960F001C6466 /* LangCaptain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangCaptain.h; sourceTree = "<group>"; };
 		921B4ED41D58960F001C6466 /* LangCaptain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LangCaptain.m; sourceTree = "<group>"; };
+		922E70E71E51A40C00473136 /* JSPatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchViewController.h; sourceTree = "<group>"; };
+		922E70E81E51A40C00473136 /* JSPatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchViewController.m; sourceTree = "<group>"; };
+		926500871E4C1A0E007AC8D9 /* IOSLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSLogic.h; sourceTree = "<group>"; };
+		926500881E4C1A0E007AC8D9 /* IOSLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSLogic.m; sourceTree = "<group>"; };
+		9265008C1E4C40C3007AC8D9 /* MasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
+		9265008D1E4C40C3007AC8D9 /* MasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
+		9265008F1E4C534A007AC8D9 /* UpdateBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateBaseView.h; sourceTree = "<group>"; };
+		926500901E4C534A007AC8D9 /* UpdateBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateBaseView.m; sourceTree = "<group>"; };
 		92F591AB1D59BD16004E242B /* LocationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationData.h; sourceTree = "<group>"; };
 		92F591AC1D59BD16004E242B /* LocationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationData.m; sourceTree = "<group>"; };
 		92F591AF1D59C255004E242B /* NSData+AES256Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256Encrypt.h"; sourceTree = "<group>"; };
@@ -132,6 +140,8 @@
 		921B4E851D58848F001C6466 /* ZhangleiIOSProject */ = {
 			isa = PBXGroup;
 			children = (
+				9265008A1E4C402D007AC8D9 /* ViewController */,
+				926500861E4C19FE007AC8D9 /* IOSLogic */,
 				92F591B21D59D354004E242B /* Debug */,
 				92F591AE1D59C22A004E242B /* Encrypt */,
 				92F591AA1D59BD07004E242B /* LocationData */,
@@ -140,9 +150,7 @@
 				921B4E8A1D58848F001C6466 /* AppDelegate.m */,
 				921B4E8C1D58848F001C6466 /* ViewController.h */,
 				921B4E8D1D58848F001C6466 /* ViewController.m */,
-				921B4E8F1D58848F001C6466 /* Main.storyboard */,
 				921B4E921D58848F001C6466 /* Assets.xcassets */,
-				921B4E941D58848F001C6466 /* LaunchScreen.storyboard */,
 				921B4E971D58848F001C6466 /* Info.plist */,
 				921B4E861D58848F001C6466 /* Supporting Files */,
 			);
@@ -182,6 +190,44 @@
 				921B4ED41D58960F001C6466 /* LangCaptain.m */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		922E70E61E51A3E800473136 /* JSPacth */ = {
+			isa = PBXGroup;
+			children = (
+				922E70E71E51A40C00473136 /* JSPatchViewController.h */,
+				922E70E81E51A40C00473136 /* JSPatchViewController.m */,
+			);
+			path = JSPacth;
+			sourceTree = "<group>";
+		};
+		926500861E4C19FE007AC8D9 /* IOSLogic */ = {
+			isa = PBXGroup;
+			children = (
+				926500871E4C1A0E007AC8D9 /* IOSLogic.h */,
+				926500881E4C1A0E007AC8D9 /* IOSLogic.m */,
+			);
+			path = IOSLogic;
+			sourceTree = "<group>";
+		};
+		9265008A1E4C402D007AC8D9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				922E70E61E51A3E800473136 /* JSPacth */,
+				9265008B1E4C402D007AC8D9 /* Masonry */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9265008B1E4C402D007AC8D9 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				9265008C1E4C40C3007AC8D9 /* MasonryViewController.h */,
+				9265008D1E4C40C3007AC8D9 /* MasonryViewController.m */,
+				9265008F1E4C534A007AC8D9 /* UpdateBaseView.h */,
+				926500901E4C534A007AC8D9 /* UpdateBaseView.m */,
+			);
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 		92F591AA1D59BD07004E242B /* LocationData */ = {
@@ -329,9 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				921B4EBB1D5894FA001C6466 /* config in Resources */,
-				921B4E961D58848F001C6466 /* LaunchScreen.storyboard in Resources */,
 				921B4E931D58848F001C6466 /* Assets.xcassets in Resources */,
-				921B4E911D58848F001C6466 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,12 +448,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922E70E91E51A40C00473136 /* JSPatchViewController.m in Sources */,
 				92F591B11D59C255004E242B /* NSData+AES256Encrypt.m in Sources */,
 				921B4E8E1D58848F001C6466 /* ViewController.m in Sources */,
 				92F591B51D59D37E004E242B /* DebugUtil.m in Sources */,
 				921B4E8B1D58848F001C6466 /* AppDelegate.m in Sources */,
 				92F591AD1D59BD16004E242B /* LocationData.m in Sources */,
+				9265008E1E4C40C3007AC8D9 /* MasonryViewController.m in Sources */,
+				926500911E4C534A007AC8D9 /* UpdateBaseView.m in Sources */,
 				921B4ED51D58960F001C6466 /* LangCaptain.m in Sources */,
+				926500891E4C1A0E007AC8D9 /* IOSLogic.m in Sources */,
 				921B4E881D58848F001C6466 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,25 +492,6 @@
 			targetProxy = 921B4EA81D58848F001C6466 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		921B4E8F1D58848F001C6466 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				921B4E901D58848F001C6466 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		921B4E941D58848F001C6466 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				921B4E951D58848F001C6466 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		921B4EAE1D58848F001C6466 /* Debug */ = {
@@ -561,6 +590,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PushTest.ZhangleiIOSProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -574,6 +604,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PushTest.ZhangleiIOSProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

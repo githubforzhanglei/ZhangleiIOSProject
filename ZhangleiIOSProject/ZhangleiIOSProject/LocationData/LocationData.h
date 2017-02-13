@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ [数据存储] app用户信息Document 存储
+ **/
+
 @interface LocationData : NSObject
 
 + (LocationData *) getInstance;

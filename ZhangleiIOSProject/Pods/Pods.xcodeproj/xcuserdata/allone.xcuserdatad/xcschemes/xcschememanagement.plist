@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GDataXML-HTML.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GVUserDefaults.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>JSPatch.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -42,27 +57,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>325E0F928F4D0842ECDF259F63F1D842</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4262BBA69037616CAFAC960466AF77B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>61AF834BD5E672B7F7D09720B79C2A88</key>
+		<key>426C68EFD8C46CDDEFF1DFC77A3D5873</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>881778F734C59ECF7503E664AA00F273</key>
+		<key>6E10BE2C94DC7B6BA45B13978F3E149E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8642CC820CE8C5B88C113D7F47AF4BC3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9E2118538F3F64CC53B3BBFBF17E682F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -73,6 +93,16 @@
 			<true/>
 		</dict>
 		<key>CEA433434E73E2E09F093C65198A9D3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3A2AFB652B7C24689F3E49EB4565948</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB1B608CA194B526EEF0EC7ADC16F3B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -22,4 +22,9 @@ target 'ZhangleiIOSProject' do
     pod 'JazzHands', '~> 2.0.8'
     pod 'WebViewJavascriptBridge', '~> 6.0.0'
     
+    pod 'GVUserDefaults', '~> 1.0.2'
+    
+    pod 'FMDB', '~> 2.6'
+    pod 'JSPatch', '~> 1.1.2'
+    
 end

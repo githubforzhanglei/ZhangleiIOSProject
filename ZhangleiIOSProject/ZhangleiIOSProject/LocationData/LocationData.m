@@ -16,7 +16,7 @@ NSString *const EncryptDataKey = @"EncryptDataKey";
 
 NSString *const AESKey = @"AESKey";
 
-static LocationData *locationData = nil;
+static LocationData *locationDataInstance = nil;
 
 @interface LocationData(){
     NSString *_fileName;
@@ -30,10 +30,11 @@ static LocationData *locationData = nil;
 @synthesize dataString;
 
 + (LocationData *)getInstance {
-    if (locationData == nil) {
-        locationData = [[LocationData alloc] initWithFileName:AppLocationDataFileName];
-    }
-    return locationData;
+    static dispatch_once_t predicate;
+    dispatch_once(&predicate, ^{
+        locationDataInstance = [[self alloc] init];
+    });
+    return locationDataInstance;
 }
 
 - (id)init {
@@ -56,9 +57,10 @@ static LocationData *locationData = nil;
 }
 
 -(void) loadUserConfigSaveData {
-    NSString *dataPath = NSTemporaryDirectory();
-    //        NSLog(@"%@", dataPath);
-    dataPath = [NSString stringWithFormat:@"%@%@", dataPath, _fileName];
+//    NSString *dataPath = NSTemporaryDirectory();
+//    dataPath = [NSString stringWithFormat:@"%@%@", dataPath, _fileName];
+    NSString *dataPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    dataPath = [NSString stringWithFormat:@"%@/%@", dataPath, _fileName];
     
     NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:dataPath];
     
@@ -67,19 +69,23 @@ static LocationData *locationData = nil;
         appName = @"default_appName";
     }
     
+    //载入 解密后的数据
     NSData* encryptData = [dictionary objectForKey:EncryptDataKey];
     if (encryptData != nil) {
         NSData *decryptData = [encryptData AES256DecryptWithKey:AESKey];
         dataString = [[NSString alloc] initWithData:decryptData encoding:NSASCIIStringEncoding];
     }
-    
 }
 
 -(void) writeUserConfigPlist:(NSString *) plistFile{
+//    NSString *dataPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+//    dataPath = [NSString stringWithFormat:@"%@/%@", dataPath, _fileName];
+//    NSDictionary *dictPlist = [[NSDictionary alloc] initWithContentsOfFile:dataPath];
     NSMutableDictionary *dictPlist = [[NSMutableDictionary alloc ] init];
     
     [dictPlist setObject:appName forKey:AppNameKey];
     
+    // 写入 加密后的数据
     if (dataString != nil) {
         NSData* oriData = [dataString dataUsingEncoding:NSUTF8StringEncoding];
         NSData* encryptData = [oriData AES256EncryptWithKey:AESKey];

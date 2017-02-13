@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+/*
+ [配置] 语言项翻译 单例
+ path : config/MessageLang
+ */
+
 @interface LangCaptain : NSObject
 
 + (LangCaptain *)getInstance;

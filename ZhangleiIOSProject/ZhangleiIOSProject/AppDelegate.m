@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "IOSLogic.h"
+#import "JPEngine.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    //    [JPEngine startEngine];
+    //    NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"config/Main" ofType:@"js"];
+    //    NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
+    //    [JPEngine evaluateScript:script];
+    //    sendSynchronousRequest sendAsynchronousRequest
+    //    NSURLResponse *response;
+    
+    [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.40.29/TestWebService/test.js"]]
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                               NSString *script = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+                               [JPEngine evaluateScript:script];
+                               
+                               NSLog(@"receive data is %@", script);
+                               
+                               [[IOSLogic getInstance] gotoJSPatchViewController];
+                           }];
+    
+    //    sleep(3);
+    //
+    [[IOSLogic getInstance] setMWindow:self.window];
+    if(![[IOSLogic getInstance] gotoLoginViewController]){
+        return NO;
+    }
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

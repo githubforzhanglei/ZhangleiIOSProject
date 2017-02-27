@@ -10,6 +10,12 @@
 #import "ViewController.h"
 #import "MasonryViewController.h"
 #import "JSPatchViewController.h"
+#import "JSONModelViewController.h"
+#import "RuntimeViewController.h"
+#import "SDWebImageViewController.h"
+#import "InternalFuncViewController.h"
+#import "URLSessionViewController.h"
+#import "AttributedLabelViewController.h"
 
 static IOSLogic *iOSLogicInstance = nil;
 
@@ -72,6 +78,77 @@ static IOSLogic *iOSLogicInstance = nil;
         mWindow.rootViewController = viewController;
     }
     
+    return YES;
+}
+
+- (Boolean) gotoJSONModelViewController {
+    if(self.mWindow == nil)
+        return NO;
+    
+    if (![mWindow.rootViewController isKindOfClass:[JSONModelViewController class]]) {
+        JSONModelViewController * viewController = [[JSONModelViewController alloc] init];
+        mWindow.rootViewController = viewController;
+    }
+    return YES;
+}
+
+- (Boolean) gotoRuntimeViewController {
+    if (self.mWindow == nil) {
+        return NO;
+    }
+    
+    if (![mWindow.rootViewController isKindOfClass:[RuntimeViewController class]]) {
+        RuntimeViewController * viewController = [[RuntimeViewController alloc] init];
+        mWindow.rootViewController = viewController;
+    }
+    return YES;
+}
+
+- (Boolean) gotoSDWebImageViewController {
+    if (self.mWindow == nil) {
+        return NO;
+    }
+    
+    if (![mWindow.rootViewController isKindOfClass:[SDWebImageViewController class]]) {
+        SDWebImageViewController * viewController = [[SDWebImageViewController alloc] init];
+        mWindow.rootViewController = viewController;
+    }
+    return YES;
+}
+
+- (Boolean) gotoInternalFuncViewController {
+    if (self.mWindow == nil) {
+        return NO;
+    }
+    
+    if (![mWindow.rootViewController isKindOfClass:[InternalFuncViewController class]]) {
+        InternalFuncViewController * viewController = [[InternalFuncViewController alloc] init];
+        mWindow.rootViewController = viewController;
+    }
+    return YES;
+}
+
+- (Boolean) gotoURLSessionViewController {
+    if (self.mWindow == nil) {
+        return NO;
+    }
+    
+    if (![mWindow.rootViewController isKindOfClass:[URLSessionViewController class]]) {
+        URLSessionViewController * viewController = [[URLSessionViewController alloc] init];
+        mWindow.rootViewController = viewController;
+    }
+    return YES;
+}
+
+- (Boolean) gotoAttributedLabelViewController {
+    if (self.mWindow == nil) {
+        return NO;
+    }
+    
+    if (![mWindow.rootViewController isKindOfClass:[AttributedLabelViewController class]]) {
+        AttributedLabelViewController * viewController = [[AttributedLabelViewController alloc] init];
+        mWindow.rootViewController = viewController;
+    }
     return YES;
 }
 

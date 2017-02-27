@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JSONModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JSPatch.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,7 +49,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SMPageControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>TTTAttributedLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,6 +72,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>12E485D47063D3F3B1E34484DBA1646B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>325E0F928F4D0842ECDF259F63F1D842</key>
 		<dict>
 			<key>primary</key>
@@ -67,12 +87,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>426C68EFD8C46CDDEFF1DFC77A3D5873</key>
+		<key>55E3CFFEDC2629EE0C17B343EC00595B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E10BE2C94DC7B6BA45B13978F3E149E</key>
+		<key>5746F533083E97FECAA88D3908FF8A27</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6CB885D1B083F686084A3E9BA2584D78</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -92,12 +117,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B6EF3EFEED5AC57D36A88EA579872C8C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CEA433434E73E2E09F093C65198A9D3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3A2AFB652B7C24689F3E49EB4565948</key>
+		<key>DB2442AEC52877BD8B0738CB977353A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

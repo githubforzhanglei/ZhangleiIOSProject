@@ -27,4 +27,10 @@ target 'ZhangleiIOSProject' do
     pod 'FMDB', '~> 2.6'
     pod 'JSPatch', '~> 1.1.2'
     
+    pod 'JSONModel', '~> 1.7.0'
+    
+    pod 'SDWebImage', '~> 4.0.0'
+    
+    pod 'TTTAttributedLabel', '~>2.0.0'
+    
 end

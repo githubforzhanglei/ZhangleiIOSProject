@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F3307748381AE2ADBAB9EAF /* libPods-ZhangleiIOSProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9305E85F9D7D8889A335D27 /* libPods-ZhangleiIOSProject.a */; };
+		9214F0A91E640CCA00BAB73B /* AttributedLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9214F0A81E640CCA00BAB73B /* AttributedLabelViewController.m */; };
 		921B4E881D58848F001C6466 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4E871D58848F001C6466 /* main.m */; };
 		921B4E8B1D58848F001C6466 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4E8A1D58848F001C6466 /* AppDelegate.m */; };
 		921B4E8E1D58848F001C6466 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4E8D1D58848F001C6466 /* ViewController.m */; };
@@ -17,9 +18,16 @@
 		921B4EBB1D5894FA001C6466 /* config in Resources */ = {isa = PBXBuildFile; fileRef = 921B4EBA1D5894FA001C6466 /* config */; };
 		921B4ED51D58960F001C6466 /* LangCaptain.m in Sources */ = {isa = PBXBuildFile; fileRef = 921B4ED41D58960F001C6466 /* LangCaptain.m */; };
 		922E70E91E51A40C00473136 /* JSPatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E70E81E51A40C00473136 /* JSPatchViewController.m */; };
+		922E70ED1E51BCB400473136 /* JSONModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E70EC1E51BCB400473136 /* JSONModelViewController.m */; };
+		922E70F01E51BDE900473136 /* SimpleJsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 922E70EF1E51BDE900473136 /* SimpleJsonModel.m */; };
+		923502E21E557E0400F70FD0 /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923502E11E557E0400F70FD0 /* RuntimeViewController.m */; };
+		923502E51E557EA600F70FD0 /* SimpleRuntimeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 923502E41E557EA600F70FD0 /* SimpleRuntimeObject.m */; };
 		926500891E4C1A0E007AC8D9 /* IOSLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 926500881E4C1A0E007AC8D9 /* IOSLogic.m */; };
 		9265008E1E4C40C3007AC8D9 /* MasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9265008D1E4C40C3007AC8D9 /* MasonryViewController.m */; };
 		926500911E4C534A007AC8D9 /* UpdateBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 926500901E4C534A007AC8D9 /* UpdateBaseView.m */; };
+		9287F44A1E5BD876009BB88C /* SDWebImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9287F4491E5BD876009BB88C /* SDWebImageViewController.m */; };
+		9287F44E1E5C1286009BB88C /* InternalFuncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9287F44D1E5C1286009BB88C /* InternalFuncViewController.m */; };
+		9287F4521E5C2A91009BB88C /* URLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9287F4511E5C2A91009BB88C /* URLSessionViewController.m */; };
 		92F591AD1D59BD16004E242B /* LocationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F591AC1D59BD16004E242B /* LocationData.m */; };
 		92F591B11D59C255004E242B /* NSData+AES256Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F591B01D59C255004E242B /* NSData+AES256Encrypt.m */; };
 		92F591B51D59D37E004E242B /* DebugUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F591B41D59D37E004E242B /* DebugUtil.m */; };
@@ -44,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		636A9EFFB6E240C1D8970C0E /* Pods-ZhangleiIOSProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhangleiIOSProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhangleiIOSProject/Pods-ZhangleiIOSProject.release.xcconfig"; sourceTree = "<group>"; };
+		9214F0A71E640CCA00BAB73B /* AttributedLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedLabelViewController.h; sourceTree = "<group>"; };
+		9214F0A81E640CCA00BAB73B /* AttributedLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedLabelViewController.m; sourceTree = "<group>"; };
 		921B4E831D58848F001C6466 /* ZhangleiIOSProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhangleiIOSProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		921B4E871D58848F001C6466 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		921B4E891D58848F001C6466 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,12 +73,26 @@
 		921B4ED41D58960F001C6466 /* LangCaptain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LangCaptain.m; sourceTree = "<group>"; };
 		922E70E71E51A40C00473136 /* JSPatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchViewController.h; sourceTree = "<group>"; };
 		922E70E81E51A40C00473136 /* JSPatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchViewController.m; sourceTree = "<group>"; };
+		922E70EB1E51BCB400473136 /* JSONModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelViewController.h; sourceTree = "<group>"; };
+		922E70EC1E51BCB400473136 /* JSONModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelViewController.m; sourceTree = "<group>"; };
+		922E70EE1E51BDE900473136 /* SimpleJsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleJsonModel.h; sourceTree = "<group>"; };
+		922E70EF1E51BDE900473136 /* SimpleJsonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleJsonModel.m; sourceTree = "<group>"; };
+		923502E01E557E0400F70FD0 /* RuntimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
+		923502E11E557E0400F70FD0 /* RuntimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
+		923502E31E557EA600F70FD0 /* SimpleRuntimeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleRuntimeObject.h; sourceTree = "<group>"; };
+		923502E41E557EA600F70FD0 /* SimpleRuntimeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleRuntimeObject.m; sourceTree = "<group>"; };
 		926500871E4C1A0E007AC8D9 /* IOSLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSLogic.h; sourceTree = "<group>"; };
 		926500881E4C1A0E007AC8D9 /* IOSLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSLogic.m; sourceTree = "<group>"; };
 		9265008C1E4C40C3007AC8D9 /* MasonryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonryViewController.h; sourceTree = "<group>"; };
 		9265008D1E4C40C3007AC8D9 /* MasonryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasonryViewController.m; sourceTree = "<group>"; };
 		9265008F1E4C534A007AC8D9 /* UpdateBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateBaseView.h; sourceTree = "<group>"; };
 		926500901E4C534A007AC8D9 /* UpdateBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateBaseView.m; sourceTree = "<group>"; };
+		9287F4481E5BD876009BB88C /* SDWebImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageViewController.h; sourceTree = "<group>"; };
+		9287F4491E5BD876009BB88C /* SDWebImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageViewController.m; sourceTree = "<group>"; };
+		9287F44C1E5C1286009BB88C /* InternalFuncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InternalFuncViewController.h; path = ZhangleiIOSProject/ViewController/InternalFunc/InternalFuncViewController.h; sourceTree = SOURCE_ROOT; };
+		9287F44D1E5C1286009BB88C /* InternalFuncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InternalFuncViewController.m; path = ZhangleiIOSProject/ViewController/InternalFunc/InternalFuncViewController.m; sourceTree = SOURCE_ROOT; };
+		9287F4501E5C2A91009BB88C /* URLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionViewController.h; sourceTree = "<group>"; };
+		9287F4511E5C2A91009BB88C /* URLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLSessionViewController.m; sourceTree = "<group>"; };
 		92F591AB1D59BD16004E242B /* LocationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationData.h; sourceTree = "<group>"; };
 		92F591AC1D59BD16004E242B /* LocationData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationData.m; sourceTree = "<group>"; };
 		92F591AF1D59C255004E242B /* NSData+AES256Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256Encrypt.h"; sourceTree = "<group>"; };
@@ -112,6 +136,15 @@
 				636A9EFFB6E240C1D8970C0E /* Pods-ZhangleiIOSProject.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9214F0A61E640CAC00BAB73B /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				9214F0A71E640CCA00BAB73B /* AttributedLabelViewController.h */,
+				9214F0A81E640CCA00BAB73B /* AttributedLabelViewController.m */,
+			);
+			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
 		921B4E7A1D58848E001C6466 = {
@@ -201,6 +234,28 @@
 			path = JSPacth;
 			sourceTree = "<group>";
 		};
+		922E70EA1E51BC9E00473136 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				922E70EB1E51BCB400473136 /* JSONModelViewController.h */,
+				922E70EC1E51BCB400473136 /* JSONModelViewController.m */,
+				922E70EE1E51BDE900473136 /* SimpleJsonModel.h */,
+				922E70EF1E51BDE900473136 /* SimpleJsonModel.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		923502DF1E557DEA00F70FD0 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				923502E01E557E0400F70FD0 /* RuntimeViewController.h */,
+				923502E11E557E0400F70FD0 /* RuntimeViewController.m */,
+				923502E31E557EA600F70FD0 /* SimpleRuntimeObject.h */,
+				923502E41E557EA600F70FD0 /* SimpleRuntimeObject.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
 		926500861E4C19FE007AC8D9 /* IOSLogic */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +268,12 @@
 		9265008A1E4C402D007AC8D9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9214F0A61E640CAC00BAB73B /* TTTAttributedLabel */,
+				9287F44F1E5C2A84009BB88C /* URLSession */,
+				9287F44B1E5C1279009BB88C /* internalFunc */,
+				9287F4471E5BD862009BB88C /* SDWebImage */,
+				923502DF1E557DEA00F70FD0 /* Runtime */,
+				922E70EA1E51BC9E00473136 /* JSONModel */,
 				922E70E61E51A3E800473136 /* JSPacth */,
 				9265008B1E4C402D007AC8D9 /* Masonry */,
 			);
@@ -228,6 +289,33 @@
 				926500901E4C534A007AC8D9 /* UpdateBaseView.m */,
 			);
 			path = Masonry;
+			sourceTree = "<group>";
+		};
+		9287F4471E5BD862009BB88C /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				9287F4481E5BD876009BB88C /* SDWebImageViewController.h */,
+				9287F4491E5BD876009BB88C /* SDWebImageViewController.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		9287F44B1E5C1279009BB88C /* internalFunc */ = {
+			isa = PBXGroup;
+			children = (
+				9287F44C1E5C1286009BB88C /* InternalFuncViewController.h */,
+				9287F44D1E5C1286009BB88C /* InternalFuncViewController.m */,
+			);
+			path = internalFunc;
+			sourceTree = "<group>";
+		};
+		9287F44F1E5C2A84009BB88C /* URLSession */ = {
+			isa = PBXGroup;
+			children = (
+				9287F4501E5C2A91009BB88C /* URLSessionViewController.h */,
+				9287F4511E5C2A91009BB88C /* URLSessionViewController.m */,
+			);
+			path = URLSession;
 			sourceTree = "<group>";
 		};
 		92F591AA1D59BD07004E242B /* LocationData */ = {
@@ -448,17 +536,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				922E70F01E51BDE900473136 /* SimpleJsonModel.m in Sources */,
+				923502E21E557E0400F70FD0 /* RuntimeViewController.m in Sources */,
 				922E70E91E51A40C00473136 /* JSPatchViewController.m in Sources */,
+				9214F0A91E640CCA00BAB73B /* AttributedLabelViewController.m in Sources */,
 				92F591B11D59C255004E242B /* NSData+AES256Encrypt.m in Sources */,
+				922E70ED1E51BCB400473136 /* JSONModelViewController.m in Sources */,
 				921B4E8E1D58848F001C6466 /* ViewController.m in Sources */,
 				92F591B51D59D37E004E242B /* DebugUtil.m in Sources */,
 				921B4E8B1D58848F001C6466 /* AppDelegate.m in Sources */,
 				92F591AD1D59BD16004E242B /* LocationData.m in Sources */,
 				9265008E1E4C40C3007AC8D9 /* MasonryViewController.m in Sources */,
+				9287F44E1E5C1286009BB88C /* InternalFuncViewController.m in Sources */,
 				926500911E4C534A007AC8D9 /* UpdateBaseView.m in Sources */,
 				921B4ED51D58960F001C6466 /* LangCaptain.m in Sources */,
+				9287F44A1E5BD876009BB88C /* SDWebImageViewController.m in Sources */,
 				926500891E4C1A0E007AC8D9 /* IOSLogic.m in Sources */,
 				921B4E881D58848F001C6466 /* main.m in Sources */,
+				923502E51E557EA600F70FD0 /* SimpleRuntimeObject.m in Sources */,
+				9287F4521E5C2A91009BB88C /* URLSessionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

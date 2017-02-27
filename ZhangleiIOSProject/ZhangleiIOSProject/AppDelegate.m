@@ -37,13 +37,13 @@
                                
                                NSLog(@"receive data is %@", script);
                                
-                               [[IOSLogic getInstance] gotoJSPatchViewController];
+//                               [[IOSLogic getInstance] gotoJSPatchViewController];
                            }];
     
     //    sleep(3);
     //
     [[IOSLogic getInstance] setMWindow:self.window];
-    if(![[IOSLogic getInstance] gotoLoginViewController]){
+    if(![[IOSLogic getInstance] gotoAttributedLabelViewController]){
         return NO;
     }
     

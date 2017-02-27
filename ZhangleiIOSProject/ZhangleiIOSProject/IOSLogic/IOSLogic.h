@@ -22,5 +22,11 @@
 
 - (Boolean)         gotoMasonryViewController;
 - (Boolean)         gotoJSPatchViewController;
+- (Boolean)         gotoJSONModelViewController;
+- (Boolean)         gotoRuntimeViewController;
+- (Boolean)         gotoSDWebImageViewController;
+- (Boolean)         gotoInternalFuncViewController;
+- (Boolean)         gotoURLSessionViewController;
+- (Boolean)         gotoAttributedLabelViewController;
 
 @end
